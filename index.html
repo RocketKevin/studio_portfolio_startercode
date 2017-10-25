@@ -1,41 +1,49 @@
-<!-- 
-        1.1 Wireframe your project
-        1.2 Fork and clone the repo and set up your project workspace
-        2.1 Link your files in the head of the docment Add a Nav Bar to your site - It should have three links (Portfolio, About, and Contact) 
-        2.2 Add a div for each section. Within section add a contatiner div with the appropriate number of rows and columns 
-        3.1 Add thumbnails and other custom component (button, modal, font) using bootstrap Documentation 
-        3.2 Add CSS and add your site to gh-pages 
--->
-
 <!DOCTYPE html>
-<head>   
+<head> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!--<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>-->
+   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+   <!-- <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <div class='head'>
-        <img src=""></img>
-        <h3>Kevin Chen</h3>
+        <div id='Kevin' class='Kevin'></div>
+        <h3 id = 'name'></h3>
     </div>
-    <!-- Portfolio Grid Section -->
-    <div class='nav'>
-        <div id='aboutme'></div>
-        <div id='works'></div>
-        <div id='albums'></div>
-    </div>
+    <!--<div class='nav'>-->
+    <!--    <button type="button" id='aboutme'></button>-->
+    <!--    <button type="button" id='works'></button>-->
+    <!--    <button type="button" id='albums'></button>-->
+    <!--</div>-->
     
-    <div class='slidedown'>
-        <div id='aboutme+'></div>
-        <div id='works+'></div> 
-        <div id='albums+'></div>
-    </div>
+    <!--<div class="dropdown">-->
+    <!--    <button onclick="myFunction()" id='aboutme'></button>-->
+    <!--    <div id="myDropdown" class="dropdown-content">-->
+    <!--        <p>School Now: High School for Language and Diplomacy</p>-->
+    <!--        <p>Address: New York City</p>-->
+    <!--        <p>Birth: September 12, 2000</p>-->
+    <!--    </div>-->
+
+        <!--<button type="button" id='aboutme'></button>-->
+        <!--<button type="button" id='works'></button>-->
+        <!--<button type="button" id='albums'></button>-->
+        <!--<div id="myDropdown" class="dropdown-content">-->
+        <!--    <div id='aboutme+'></div>-->
+        <!--    <div id='works+'></div> -->
+        <!--    <div id='albums+'></div>-->
+        <!--</div>-->
+    <!--</div>-->
     
     <!-- Footer -->
-    <div class='contact'>
+    <!--<div class='contact'>-->
         
-    </div>
+    <!--</div>-->
 </body>
 
 </html>
