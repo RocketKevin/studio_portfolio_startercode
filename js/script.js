@@ -1,19 +1,19 @@
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-// window.onclick = function(event) {
-//   if (!event.target.matches('#aboutme')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// };
+window.onclick = function(event) {
+  if (!event.target.matches('#aboutme')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
  // Initialize Firebase
 var config = {
   apiKey: "AIzaSyBJ5fFFAJeV3MMTKD0MMd_ycz3U1alOeRY",
@@ -27,10 +27,31 @@ firebase.initializeApp(config);
     
 var database = firebase.database();
 
-var Name = database.ref('firstName');
+var info = database.ref('Info');
+var projects = database.ref('Projects');
+// var lastName = database.ref('lastName');
+// var highSchool = database.ref('highSchool');
+// var address = database.ref('Address');
+// var birth = database.ref('Birth');
 
-Name.on('value', function(snapshot) {
+info.on('value', function(snapshot) {
       var name = snapshot.val();
-      $('#name').html(name);
-      // console.log("Hi");
+      //console.log(name);
+      $('#name').html(name.firstName);
+      $('#name').append(' ' + name.lastName);
+      $('#highschool').html(name.highSchool);
+      $('#address').html(name.Address);
+      $('#birth').html(name.Birth);
 });
+
+projects.on('value', function(snapshot) {
+      var projects = snapshot.val();
+      for (var key in projects){
+        console.log(key)
+        var container;
+        container = key;
+        $('#test').append(container);
+      }
+});
+
+

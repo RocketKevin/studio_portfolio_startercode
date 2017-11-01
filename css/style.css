@@ -6,82 +6,105 @@ body {
 
 #Kevin {
     border-radius: 360px;
-    background: url(../images/mannequin-head-e14212973696441.jpg);
+    background: url(../images/emptyPicture.png);
     background-repeat: no-repeat;
     background-size:contain;
     width: 200px;
     height: 200px;
+    margin: auto;
 }
 
-/*-------------------------------------------------*/
+#name {
+    text-align: center;
+}
 
-/*#aboutme {*/
-/*    border-radius: 360px;*/
-/*    background: url(../images/aboutmeicon.png);*/
-/*    background-size:contain;*/
-/*    background-repeat: no-repeat;*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*    color: white;*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*}*/
-
-
-/*#aboutme:hover, #aboutme:focus {*/
-/*    background-color: #3e8e41;*/
-/*}*/
-
-
-/*.dropdown {*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*}*/
-
-
-/*.dropdown-content {*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    background-color: #f9f9f9;*/
-/*    min-width: 160px;*/
-/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-/*    z-index: 1;*/
-/*}*/
-
-
-/*.dropdown-content a {*/
-/*    color: black;*/
-/*    padding: 12px 16px;*/
-/*    text-decoration: none;*/
-/*    display: block;*/
-/*}*/
-
-
-/*.dropdown-content a:hover {background-color: #f1f1f1}*/
-
-
-/*.show {display:block;}*/
 
 /*-------------------------------------------------*/
 
-/*#works {*/
-/*    border-radius: 360px;*/
-/*    background: url(../images/Applications-icon.png);*/
-/*    background-size:contain;*/
-/*    background-repeat: no-repeat;*/
-/*    width: 200px;*/
-/*    height: 200px;   */
-/*}*/
+#aboutme {
+    border-radius: 360px;
+    background: url(../images/aboutmeicon.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
-/*#albums {*/
-/*    border-radius: 360px;*/
-/*    background: url(../images/photos.png);*/
-/*    background-size:contain;*/
-/*    background-repeat: no-repeat;*/
-/*    width: 200px;*/
-/*    height: 200px;   */
-/*}*/
+
+#aboutme:hover, #aboutme:focus {
+    background-color: #3e8e41;
+}
+
+
+.dropdown {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    margin: auto;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.show {display:block;}
+
+/*-------------------------------------------------*/
+
+#works {
+    background: url(../images/Applications-icon.png);
+    border-radius: 360px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;  
+}
+
+#works:hover, #works:focus {
+    background-color: #3e8e41;
+}
+
+#albums {
+    background: url(../images/photos.png);
+    border-radius: 360px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;  
+}
+
+#albums:hover, #albums:focus {
+    background-color: #3e8e41;
+}
 
 /*.nav {*/
 /*    background: url(http://celestial6.com/stuff/fades/hover_last.png);*/
@@ -89,6 +112,7 @@ body {
 /*    background-repeat: no-repeat;*/
 /*    background-size: 100% 100%;*/
 /*    border-radius: 360px;*/
+    
 /*}*/
 
 
