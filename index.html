@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<head> 
+
+<head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <!--<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>-->
-   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-   <!-- <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
 
 <body>
-    <!-- Header -->
     <div class='head'>
-        <div id='Kevin' class='Kevin'></div>
-        <h3 id = 'name'></h3>
+        <!--button doesnt work here. only in js bin it does-->
+        <div id='Kevin'></div> 
+        <h3 id='name'></h3>
     </div>
-    <!--<div class='nav'>-->
-    <!--    <button type="button" id='aboutme'></button>-->
-    <!--    <button type="button" id='works'></button>-->
-    <!--    <button type="button" id='albums'></button>-->
-    <!--</div>-->
     
-    <div class="dropdown">
-        <button onclick="myFunction()" id='aboutme'></button>
-        <div id="myDropdown" class="dropdown-content">
-            <p>School Now: High School for Language and Diplomacy</p>
-            <p>Address: New York City</p>
-            <p>Birth: September 12, 2000</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div id = aboutmecontainer>
+                    <button id='aboutme' class="accordion"></button>
+                    <div id = 'panelOne' class = "panel">
+                        <p id='highschool'></p>
+                        <p id='address'></p>
+                        <p id='birth'></p>
+                        <p id='gender'></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id = 'workcontainer'>
+                    <button id='works' class="accordion"></button>
+                    <div id = 'panelTwo' class = "panel">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id = albumscontainer>
+                    <button id='albums' class="accordion"></button>
+                    <div id = 'panelThree' class = "panel">
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <button onclick="myFunction()" id='works'></button>
-        <button onclick="myFunction()" id='albums'></button>
     </div>
     
-    <div id = 'test'></div>
-    <!--<div class='contact'>-->
-        
-    <!--</div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class = 'containerTwo'>
+                    <button id = 'contacts' onclick="myFunction()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
-</html>

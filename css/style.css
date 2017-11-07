@@ -4,22 +4,34 @@ body {
     background-size:cover;
 }
 
+/*.row {*/
+/*    border-top-style: solid;*/
+/*    border-bottom-style: solid;  */
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+/*}*/
+
+
+
+/*-----------------------------------------------------*/
+
 #Kevin {
     border-radius: 360px;
     background: url(../images/emptyPicture.png);
-    background-repeat: no-repeat;
     background-size:contain;
     width: 200px;
     height: 200px;
     margin: auto;
+    background-repeat: no-repeat;
 }
 
 #name {
     text-align: center;
+    background-repeat: no-repeat;
 }
 
-
-/*-------------------------------------------------*/
+/*------------------------------------------------------*/
 
 #aboutme {
     border-radius: 360px;
@@ -32,45 +44,22 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 
-#aboutme:hover, #aboutme:focus {
+#aboutme:hover {
     background-color: #3e8e41;
 }
 
 
-.dropdown {
-    /*position: relative;*/
-    /*display: inline-block;*/
-    margin: auto;
-}
-
-
-.dropdown-content {
+.panel {
+    padding: 0 18px;
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-color: white;
 }
 
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-
-.show {display:block;}
-
-/*-------------------------------------------------*/
+/*---------------------------------------------*/
 
 #works {
     background: url(../images/Applications-icon.png);
@@ -82,12 +71,16 @@ body {
     color: white;
     font-size: 16px;
     border: none;
-    cursor: pointer;  
+    cursor: pointer;
+    transition: 0.4s;
+
 }
 
-#works:hover, #works:focus {
+#works:hover {
     background-color: #3e8e41;
 }
+
+/*------------------------------------------------*/
 
 #albums {
     background: url(../images/photos.png);
@@ -99,45 +92,61 @@ body {
     color: white;
     font-size: 16px;
     border: none;
-    cursor: pointer;  
+    cursor: pointer; 
+    transition: 0.4s;
 }
 
-#albums:hover, #albums:focus {
+#albums:hover {
     background-color: #3e8e41;
 }
 
-/*.nav {*/
-/*    background: url(http://celestial6.com/stuff/fades/hover_last.png);*/
-/*    display: inline-block;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 100% 100%;*/
-/*    border-radius: 360px;*/
-    
-/*}*/
+/*---------------------------------*/
 
+#contacts {
+    background: url(../images/contacticon.png);
+    border-radius: 360px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+}
 
-/* Nav Bar CSS */
+#contacts:hover {
+    background-color: #3e8e41;
+}
 
+.containerTwo {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* Header CSS */
+.container {
+    border-top-style: solid;
+    border-bottom-style: solid; 
+    width: 1000px;
+}
 
+#workcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#albumscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
 
-/* Section CSS */
-
-
-
-/* About Section CSS */
-
-
-
-/* Portfolio Item CSS */
-
-
-
-/* Footer CSS */
-
-
-
-/* Button CSS */
+#aboutmecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
