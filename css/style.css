@@ -113,6 +113,7 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer; 
+    transition: 0.4s;
 }
 
 #contacts:hover {
@@ -120,10 +121,7 @@ body {
 }
 
 .containerTwo {
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .container {
